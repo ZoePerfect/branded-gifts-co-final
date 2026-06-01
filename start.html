@@ -339,16 +339,30 @@ async function submitForm(){
         'Accept': 'application/json'
       },
       body: JSON.stringify({
-        access_key: '7e223f8e-a6cd-4549-b348-bd8c6f886a46',
-        subject: 'New Project Inquiry from Branded Gifts Co Website',
-        from_name: name,
-        name: name,
-        company: company,
-        email: email,
-        project_type: projectType,
-        estimated_quantity: quantity,
-        project_details: details
-      })
+
+  access_key: '7e223f8e-a6cd-4549-b348-bd8c6f886a46',
+
+  subject: 'New Project Inquiry from Branded Gifts Co Website',
+
+  from_name: name,
+
+  name: name,
+
+  company: company,
+
+  email: email,
+
+  replyto: email,
+
+  project_type: projectType,
+
+  estimated_quantity: quantity,
+
+  message: details,
+
+  project_details: details
+
+})
     });
 
     const result = await response.json();
