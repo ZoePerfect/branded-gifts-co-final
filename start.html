@@ -357,7 +357,7 @@ async function submitForm(){
       document.getElementById('startForm').style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
     } else {
-      alert('Something went wrong. Please email us directly at hello@brandedgiftsco.com.');
+      alert(result.message || 'Something went wrong. Please email us directly at hello@brandedgiftsco.com.');
     }
   } catch (error) {
     alert('Something went wrong. Please email us directly at hello@brandedgiftsco.com.');
