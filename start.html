@@ -307,7 +307,8 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 // Update this URL to point to your deployed API server once published.
 // During local dev it proxies through the shared Replit proxy at /api.
-const API_URL = 'https://email-form-sender--zoex1000001.replit.app/api/contact';
+const API_URL = 'https://api.web3forms.com/submit';
+const WEB3FORMS_KEY = 'de60c90a-dd18-40c7-8275-d36c59ba1961';
 // ─────────────────────────────────────────────────────────────────────────────
 
 const nav=document.getElementById('mainNav');
@@ -345,15 +346,26 @@ async function submitForm(){
   try{
     const res=await fetch(API_URL,{
       method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({name,company,email,projectType,quantity,details})
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        access_key:WEB3FORMS_KEY,
+        subject:'New Project Brief from '+name+(company?' ('+company+')':''),
+        from_name:'Branded Gifts Co Website',
+        replyto:email,
+        name:name,
+        company:company,
+        email:email,
+        'Project Type':projectType,
+        'Estimated Quantity':quantity,
+        'Project Details':details
+      })
     });
     const data=await res.json();
-    if(!res.ok) throw new Error(data.error||'Server error');
+    if(!data.success) throw new Error(data.message||'Server error');
     document.getElementById('startForm').style.display='none';
     document.getElementById('formSuccess').style.display='block';
   }catch(err){
-    errEl.textContent=err.message||'Something went wrong. Please try again or email us directly at hello@brandedgiftsco.com';
+    errEl.textContent='Something went wrong. Please try again or email us directly at hello@brandedgiftsco.com';
     errEl.style.display='block';
     btn.disabled=false;
     btn.innerHTML='Send Project Brief <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>';
