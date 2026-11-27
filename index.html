@@ -354,11 +354,21 @@ html.js .fade-up.visible{opacity:1;transform:translateY(0)}
 <style>
 #hero{overflow:visible}
 .hero-bg{overflow:hidden}
-.hero-stats{row-gap:6px}
+.hero-content{padding-bottom:96px}
+.hero-stats{row-gap:8px}
+.hero-stat-num{white-space:nowrap}
+.hero-stat-label{display:block;max-width:12em;line-height:1.35}
+@media(max-width:1100px){
+  .hero-stat{flex:1 1 30%;min-width:0;max-width:calc(33.333% - 4px);margin-right:0;padding:16px 14px 12px 0;border-right:none}
+  .hero-stat:last-child{margin-right:0}
+}
+@media(max-width:640px){
+  .hero-stat{flex:1 1 46%;max-width:calc(50% - 4px);padding:14px 12px 10px 0}
+  .hero-stat-num{font-size:30px}
+}
 .use-case-card,.cat-card{display:block;color:inherit;text-decoration:none}
 .use-case-card:focus-visible,.cat-card:focus-visible{outline:1px solid var(--gold);outline-offset:-3px}
 .use-case-meta,.use-case-desc{opacity:1;transform:none}
-.trusted-caption{max-width:760px;margin:8px auto 0;padding:0 24px;font-size:12.5px;font-weight:300;line-height:1.65;color:var(--warm-gray)}
 @media(max-width:1024px){
   .use-case-card.large{grid-column:span 1!important}
 }
@@ -410,7 +420,7 @@ html.js .fade-up.visible{opacity:1;transform:translateY(0)}
       <div class="hero-three-lines">
         <div class="hero-line"><span class="hero-line-dot"></span>Built for US brands and promo buyers.</div>
         <div class="hero-line"><span class="hero-line-dot"></span>Vetted China factories, inspected before shipping.</div>
-        <div class="hero-line"><span class="hero-line-dot"></span>DDP delivery to the US, Europe, and worldwide.</div>
+        <div class="hero-line"><span class="hero-line-dot"></span>DDP delivery to 40+ countries.</div>
       </div>
       <div class="hero-actions">
         <a href="start.html" class="btn-primary">Start A Branded Project <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg></a>
@@ -418,7 +428,10 @@ html.js .fade-up.visible{opacity:1;transform:translateY(0)}
       </div>
       <div class="hero-stats">
         <div class="hero-stat"><span class="hero-stat-num">10+</span><span class="hero-stat-label">Years of Industry Experience</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">1,000+</span><span class="hero-stat-label">Projects Completed</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">40+</span><span class="hero-stat-label">Countries Delivered</span></div>
         <div class="hero-stat"><span class="hero-stat-num">200–50K+</span><span class="hero-stat-label">Units Per Order</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">98%</span><span class="hero-stat-label">On-Time Delivery</span></div>
       </div>
     </div>
   </div>
@@ -426,10 +439,7 @@ html.js .fade-up.visible{opacity:1;transform:translateY(0)}
 
 <!-- TRUSTED BY — compact single-row PNG logo marquee -->
 <section id="trusted" aria-label="Brands we've produced for">
-  <div class="trusted-header">
-    <span class="trusted-label">Brands we've produced for</span>
-    <p class="trusted-caption">End brands from programs we have manufactured or kitted — including work fulfilled through promotional-products distributors.</p>
-  </div>
+  <div class="trusted-header"><span class="trusted-label">Brands we've produced for</span></div>
   <div class="logo-marquee" aria-hidden="false">
     <div class="logo-track">
       <div class="logo-group">
@@ -519,7 +529,7 @@ html.js .fade-up.visible{opacity:1;transform:translateY(0)}
       <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 32L20 8l12 24"/><path d="M13 22h14"/></svg><h3 class="pillar-title">OEM &amp; ODM Product Development</h3><p class="pillar-body">Your logo on an existing product (OEM) or a completely original design (ODM) — we manage concept, tooling, sampling, production, and QC.</p><span class="pillar-tag">OEM · ODM · Private Label</span></div>
       <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="6" y="10" width="28" height="20" rx="2"/><path d="M6 16h28M13 10V7M27 10V7"/><path d="M12 22h6M20 22h8"/></svg><h3 class="pillar-title">Premium Packaging &amp; Kitting Expertise</h3><p class="pillar-body">Custom gift set assembly is what we do best. We design packaging, source products, assemble kits, and fulfill to one address or thousands of recipients.</p><span class="pillar-tag">Custom Kitting · Gift Sets</span></div>
       <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 34V20l8-8M36 34V20l-8-8M4 20h32"/><rect x="14" y="14" width="12" height="20" rx="1"/></svg><h3 class="pillar-title">Projects from 200 to 50,000+ Units</h3><p class="pillar-body">Growing brands on their first 200-kit programs to enterprise teams on 50,000-unit campaigns. Same quality process and attention to detail at every scale.</p><span class="pillar-tag">Any Scale · Same Quality</span></div>
-      <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="20" cy="20" r="15"/><path d="M5 20h30M20 5c-5 5-5 25 0 30M20 5c5 5 5 25 0 30"/></svg><h3 class="pillar-title">Global DDP Delivery</h3><p class="pillar-body">Delivered Duty Paid to your warehouse, office, or individual recipients in the US, Europe, and worldwide. One invoice. No surprise import costs.</p><span class="pillar-tag">Worldwide · DDP Terms</span></div>
+      <div class="pillar"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="20" cy="20" r="15"/><path d="M5 20h30M20 5c-5 5-5 25 0 30M20 5c5 5 5 25 0 30"/></svg><h3 class="pillar-title">Global DDP Delivery</h3><p class="pillar-body">Delivered Duty Paid to your warehouse, office, or individual recipients in 40+ countries. One invoice. No surprise import costs.</p><span class="pillar-tag">40+ Countries · DDP Terms</span></div>
       <div class="pillar full-width"><svg class="pillar-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 20c0-7.7 6.3-14 14-14s14 6.3 14 14-6.3 14-14 14S6 27.7 6 20z"/><path d="M20 12v8l5 5"/><path d="M10 20h4M26 20h4M20 10v4M20 26v4"/></svg><div style="flex:1"><h3 class="pillar-title">One Partner from Concept to Doorstep</h3><p class="pillar-body" style="max-width:760px">Brief, sourcing, sampling, production, quality inspection, packaging, kitting, and global delivery — managed by one partner. No vendor juggling, no handoffs, no gaps.</p><span class="pillar-tag">End-to-End Program Management</span></div></div>
     </div>
   </div>
@@ -588,6 +598,8 @@ html.js .fade-up.visible{opacity:1;transform:translateY(0)}
         <p class="about-body">Whether you're a brand looking for a dependable kitting partner or a distributor who needs a supplier that understands your business, we're built to support your projects from sourcing to delivery.</p>
         <div class="about-credentials">
           <div class="cred-item"><span class="cred-num">10+</span><span class="cred-label">Years of Industry Experience</span></div>
+          <div class="cred-item"><span class="cred-num">1,000+</span><span class="cred-label">Projects Completed</span></div>
+          <div class="cred-item"><span class="cred-num">40+</span><span class="cred-label">Countries Delivered</span></div>
           <div class="cred-item"><span class="cred-num">200–50K+</span><span class="cred-label">Units Per Order</span></div>
         </div>
       </div>
