@@ -5,6 +5,10 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<script>document.documentElement.classList.add('js')</script>
+
 <meta name="description" content="Start a branded project with BRANDED GIFTS CO. Custom merchandise, OEM/ODM, kitting, and global delivery.">
 <title>Start A Branded Project — BRANDED GIFTS CO</title>
 <link rel="canonical" href="https://www.brandedgiftsco.com/start.html">
@@ -69,7 +73,7 @@ nav.scrolled{background:rgba(10,10,10,.96);border-color:var(--border);backdrop-f
 .mobile-close{position:absolute;top:24px;right:28px;background:none;border:none;color:var(--ivory);font-size:26px;cursor:pointer}
 
 /* ANIMATIONS */
-.fade-up{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.fade-up{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
 
@@ -142,6 +146,15 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .form-submit{width:100%;margin-top:6px;justify-content:center;padding:15px;font-size:12px}
 .form-note{font-size:11px;font-weight:300;color:var(--stone);text-align:center;margin-top:10px}
+.form-hint{font-size:12px;font-weight:300;color:var(--stone);line-height:1.6;margin-top:8px}
+.form-hint a{color:var(--gold);text-decoration:none}
+.form-hint a:hover{text-decoration:underline}
+.form-next{font-size:13.5px;font-weight:300;color:var(--warm-gray);line-height:1.7;background:var(--graphite);border-left:2px solid var(--gold);padding:14px 16px;margin-bottom:22px}
+.form-next strong{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.form-noscript{font-size:13.5px;font-weight:300;color:var(--ivory-dim);line-height:1.7;background:var(--surface);border:1px solid var(--border-light);padding:14px 16px;margin-bottom:18px}
+.form-noscript a{color:var(--gold)}
+.form-input[type=file]{padding:10px 14px}
+.form-input[type=file]::file-selector-button{background:transparent;border:1px solid var(--border-light);color:var(--ivory-dim);font-family:var(--font-body);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;margin-right:12px;border-radius:2px;cursor:pointer}
 .form-error{display:none;font-size:12px;font-weight:400;color:#e07070;text-align:center;margin-top:10px;padding:10px 14px;background:rgba(224,112,112,0.08);border:1px solid rgba(224,112,112,0.2);border-radius:2px}
 .form-success{display:none;text-align:center;padding:48px 20px}
 .form-success h3{font-family:var(--font-display);font-size:32px;font-weight:300;color:var(--gold);margin-bottom:12px}
@@ -170,7 +183,43 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
 }
 
 </style>
-<style>@media(max-width:1024px){.nav-right{display:none!important}}#inhand{color-scheme:dark}</style>
+<style>#inhand{color-scheme:dark}</style>
+
+<style>
+.nav-cta-short{display:none}
+.nav-cta-wrap{flex-shrink:0}
+.footer-copy-block{display:flex;flex-direction:column;gap:4px}
+.footer-entity{font-size:12px;color:var(--stone);line-height:1.5;max-width:460px}
+.footer-bottom{padding-bottom:84px}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:9000;display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;text-decoration:none;font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:12px 16px;border-radius:999px;box-shadow:0 10px 28px rgba(0,0,0,.4)}
+.wa-float:hover{background:#1db954;color:#fff}
+.wa-float svg{width:18px;height:18px;display:block;flex-shrink:0}
+.mobile-menu.open ~ .wa-float{visibility:hidden;pointer-events:none}
+.model-cta{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(200,169,106,.45);padding-bottom:4px;width:fit-content}
+.model-cta:hover{color:var(--ivory);border-color:var(--ivory)}
+html.js .fade-up{opacity:0;transform:translateY(26px)}
+html.js .fade-up.visible{opacity:1;transform:translateY(0)}
+@media(max-width:1024px){
+  .nav-links{display:none!important}
+  .nav-right{display:flex!important;align-items:center;margin-left:auto;flex-wrap:nowrap;gap:10px;min-width:0}
+  .nav-cta-wrap{display:block!important;flex-shrink:0}
+  .nav-hamburger{display:flex!important}
+}
+@media(max-width:560px){
+  .nav-cta-full{display:none}
+  .nav-cta-short{display:inline}
+  .nav-cta-wrap a{padding:8px 10px;letter-spacing:.04em}
+}
+@media(max-width:400px){
+  .nav-logo{font-size:16px}
+  .nav-cta-wrap a{font-size:9px;padding:7px 8px}
+}
+@media(max-width:640px){
+  .wa-float{width:48px;height:48px;padding:0;border-radius:50%;justify-content:center}
+  .wa-float span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+}
+</style>
+
 </head>
 <body>
 
@@ -195,7 +244,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
         <li><a href="faq.html">FAQ</a></li>
       </ul>
       <div class="nav-cta-wrap">
-        <a href="start.html">Start A Branded Project</a>
+        <a href="start.html"><span class="nav-cta-full">Start A Branded Project</span><span class="nav-cta-short">Start a Project</span></a>
       </div>
     </div>
     <button class="nav-hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">
@@ -212,6 +261,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
       <h3>Other ways to reach us</h3>
       <div class="start-contact-items">
         <a href="https://wa.me/16262953863" class="start-contact-item"><div class="start-contact-icon">💬</div><div><div class="start-contact-title">WhatsApp</div><div class="start-contact-desc">For quick questions and project updates.</div></div></a>
+        <a href="tel:+16262953863" class="start-contact-item"><div class="start-contact-icon">☎</div><div><div class="start-contact-title">Phone</div><div class="start-contact-desc">+1 (626) 295-3863</div></div></a>
         <a href="mailto:hello@brandedgiftsco.com" class="start-contact-item"><div class="start-contact-icon">✉️</div><div><div class="start-contact-title">Email</div><div class="start-contact-desc">For RFQs, artwork, and project details.</div></div></a>
         <a href="https://www.linkedin.com/in/zoe-brandedgiftsco" target="_blank" rel="noopener" class="start-contact-item"><div class="start-contact-icon" style="font-size:13px;font-weight:700">in</div><div><div class="start-contact-title">LinkedIn</div><div class="start-contact-desc">Connect with us professionally.</div></div></a>
       </div>
@@ -221,28 +271,38 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
     <div class="start-form" id="startForm">
       <h2>Tell us about your project</h2>
       <p class="form-sub">All fields marked * are required.</p>
+      <div class="form-next"><strong>What happens next</strong>We reply within one business day with questions, product options, or an itemized quote. Nothing goes into production until you approve a sample. Sending this brief does not commit you to an order.</div>
+      <noscript>
+        <div class="form-noscript">This form needs JavaScript to send. Email your brief to <a href="mailto:hello@brandedgiftsco.com?subject=Project%20Brief">hello@brandedgiftsco.com</a> with your name, company, phone, website, whether you are a brand or a distributor, project type, quantity, budget, delivery country, and project details. Attach artwork to that email.</div>
+      </noscript>
       <div class="form-row">
-        <div class="form-group"><label class="form-label" for="name">Name *</label><input class="form-input" type="text" id="name" placeholder="Your name" required></div>
-        <div class="form-group"><label class="form-label" for="company">Company</label><input class="form-input" type="text" id="company" placeholder="Company name"></div>
+        <div class="form-group"><label class="form-label" for="name">Name *</label><input class="form-input" type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required></div>
+        <div class="form-group"><label class="form-label" for="company">Company</label><input class="form-input" type="text" id="company" name="company" autocomplete="organization" placeholder="Company name"></div>
       </div>
-      <div class="form-group"><label class="form-label" for="email">Work Email *</label><input class="form-input" type="email" id="email" placeholder="you@company.com" required></div>
+      <div class="form-group"><label class="form-label" for="email">Work Email *</label><input class="form-input" type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" required></div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label" for="project-type">Project Type</label><select class="form-input form-select" id="project-type"><option value="" disabled selected>Select a category</option><option>Custom Merchandise</option><option>Gift Set Kitting</option><option>Custom Packaging</option><option>OEM Manufacturing</option><option>ODM Development</option><option>Not Sure Yet</option></select></div>
-        <div class="form-group"><label class="form-label" for="quantity">Estimated Quantity</label><input class="form-input" type="text" id="quantity" placeholder="e.g. 500 units"></div>
+        <div class="form-group"><label class="form-label" for="phone">Phone</label><input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Your phone number"></div>
+        <div class="form-group"><label class="form-label" for="website">Website</label><input class="form-input" type="text" id="website" name="website" autocomplete="url" placeholder="https://yourcompany.com"></div>
+      </div>
+      <div class="form-group"><label class="form-label" for="buyer-type">You are *</label><select class="form-input form-select" id="buyer-type" name="buyer-type" required><option value="" disabled selected>Brand, distributor, or other</option><option value="brand">Brand or in-house team</option><option value="distributor">Promotional products distributor</option><option value="agency">Agency</option><option value="other">Other</option></select></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label" for="project-type">Project Type *</label><select class="form-input form-select" id="project-type" name="project-type" required><option value="" disabled selected>Select a category</option><option value="welcome-kits">Welcome Kits &amp; Onboarding Sets</option><option value="turnkey">Turnkey Gift Kits</option><option value="kitting">Gift Set Kitting &amp; Fulfillment</option><option value="tech-kits">Tech &amp; Remote Kits</option><option value="tech">Tech Accessories</option><option value="event">Event Merchandise</option><option value="travel-kits">Business Travel Kits</option><option value="travel">Travel &amp; Lifestyle</option><option value="lifestyle">Out-of-Office Gifts</option><option value="drinkware">Drinkware</option><option value="apparel">Apparel</option><option value="packaging">Custom Packaging</option><option value="office">Office Essentials</option><option value="eco">Eco-Friendly</option><option value="oem">OEM Manufacturing</option><option value="odm">ODM Development</option><option value="oem-odm">Custom OEM / ODM Programs</option><option value="merchandise">Custom Merchandise</option><option value="trade">Trade Partner / Distributor Program</option><option value="unsure">Not Sure Yet</option></select></div>
+        <div class="form-group"><label class="form-label" for="quantity">Estimated Quantity *</label><input class="form-input" type="text" id="quantity" name="quantity" placeholder="e.g. 500 units" required><p class="form-hint">Most projects start at 200 units. OEM is typically 1,000. Packaging often starts at 500.</p></div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label" for="budget">Total Budget (USD) *</label><select class="form-input form-select" id="budget" required><option value="" disabled selected>Select a range</option><option>Under $3,000</option><option>$3,000 – $10,000</option><option>$10,000 – $25,000</option><option>$25,000 – $50,000</option><option>$50,000+</option><option>Not sure yet</option></select></div>
-        <div class="form-group"><label class="form-label" for="inhand">In-Hand Date</label><input class="form-input" type="date" id="inhand"></div>
+        <div class="form-group"><label class="form-label" for="budget">Total Budget (USD) *</label><select class="form-input form-select" id="budget" name="budget" required><option value="" disabled selected>Select a range</option><option>Under $3,000</option><option>$3,000 – $10,000</option><option>$10,000 – $25,000</option><option>$25,000 – $50,000</option><option>$50,000+</option><option>Not sure yet</option></select><p class="form-hint">There is no minimum order amount.</p></div>
+        <div class="form-group"><label class="form-label" for="inhand">In-Hand Date</label><input class="form-input" type="date" id="inhand" name="inhand"></div>
       </div>
-      <div class="form-group"><label class="form-label" for="country">Delivery Country</label><input class="form-input" type="text" id="country" placeholder="e.g. United States, Germany, multiple countries"></div>
-      <div class="form-group"><label class="form-label" for="details">Project Details *</label><textarea class="form-input form-textarea" id="details" placeholder="Tell us what you're looking for, including products, branding requirements, timeline, and target budget." required></textarea></div>
+      <div class="form-group"><label class="form-label" for="country">Delivery Country</label><input class="form-input" type="text" id="country" name="country" placeholder="e.g. United States, Germany, multiple countries"></div>
+      <div class="form-group"><label class="form-label" for="artwork">Artwork (optional)</label><input class="form-input" type="file" id="artwork" name="attachment" accept=".pdf,.png,.jpg,.jpeg,.webp,.svg,.ai,.eps,.zip"><p class="form-hint">Attach a logo or print file here, or email artwork to <a href="mailto:hello@brandedgiftsco.com">hello@brandedgiftsco.com</a>. Files over 4 MB should be emailed.</p></div>
+      <div class="form-group"><label class="form-label" for="details">Project Details *</label><textarea class="form-input form-textarea" id="details" name="details" placeholder="Tell us what you're looking for, including products, branding requirements, timeline, and target budget." required></textarea></div>
       <button type="button" class="btn-primary form-submit" id="submitBtn" onclick="submitForm()">Send Project Brief <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg></button>
       <p class="form-note">Response within 1 business day · No commitment required</p>
       <p class="form-error" id="formError"></p>
     </div>
     <div class="form-success" id="formSuccess">
       <h3>Thank you!</h3>
-      <p>We've received your brief and will be in touch within one business day to discuss your project and outline next steps.</p>
+      <p>We've received your brief. Next, we review it and reply within one business day with questions, product options, or an itemized quote. If your artwork is still outstanding, email it to <a href="mailto:hello@brandedgiftsco.com" style="color:var(--gold)">hello@brandedgiftsco.com</a>.</p>
       <a href="index.html" class="btn-ghost" style="margin-top:24px;display:inline-flex">← Back to Homepage</a>
     </div>
   </div>
@@ -257,7 +317,6 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
         <div class="footer-badges">
           <span class="footer-badge">US Company</span>
           <span class="footer-badge">OEM · ODM</span>
-          <span class="footer-badge">SAGE / ASI</span>
           <span class="footer-badge">Global DDP</span>
         </div>
         <div class="footer-social">
@@ -290,11 +349,11 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><span class="footer-address">Wyoming, USA</span></li>
+          <li><span class="footer-address">Branded Gifts Co LLC / Registered in Wyoming, USA</span></li>
           <li><a href="mailto:hello@brandedgiftsco.com">hello@brandedgiftsco.com</a></li>
           <li><a href="tel:+16262953863">+1 (626) 295-3863</a></li>
           <li><a href="https://wa.me/16262953863">WhatsApp</a></li>
-          <li><a href="start.html">Get a Quote</a></li>
+          <li><a href="start.html">Start a Project</a></li>
         </ul>
       </div>
     </div>
@@ -302,7 +361,10 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
   <div class="footer-bottom">
     <div class="container">
       <div class="footer-bottom-inner">
-        <span class="footer-copy">© 2026 BRANDED GIFTS CO. All rights reserved.</span>
+        <div class="footer-copy-block">
+          <span class="footer-copy">© 2026 BRANDED GIFTS CO. All rights reserved.</span>
+          <span class="footer-entity">Branded Gifts Co LLC / Registered in Wyoming, USA</span>
+        </div>
         <div class="footer-legal">
           <a href="privacy.html">Privacy Policy</a>
           <span class="footer-legal-sep">|</span>
@@ -333,22 +395,64 @@ document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click
 const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 
+function selectedLabel(id){
+  const el=document.getElementById(id);
+  if(!el||el.selectedIndex<0) return '';
+  return (el.options[el.selectedIndex].text||'').trim();
+}
+function prefillFromQuery(){
+  const params=new URLSearchParams(window.location.search);
+  const type=(params.get('type')||'').trim();
+  if(!type) return;
+  const project=document.getElementById('project-type');
+  const match=[...project.options].some(opt=>opt.value===type);
+  if(match) project.value=type;
+  if(type==='trade'){
+    const buyer=document.getElementById('buyer-type');
+    if(buyer) buyer.value='distributor';
+  }
+}
+prefillFromQuery();
+
 async function submitForm(){
   const name=document.getElementById('name').value.trim();
   const company=document.getElementById('company').value.trim();
   const email=document.getElementById('email').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const website=document.getElementById('website').value.trim();
+  const buyerType=document.getElementById('buyer-type').value;
+  const buyerLabel=selectedLabel('buyer-type');
   const projectType=document.getElementById('project-type').value;
+  const projectLabel=selectedLabel('project-type');
   const quantity=document.getElementById('quantity').value.trim();
   const details=document.getElementById('details').value.trim();
   const budget=document.getElementById('budget').value;
   const inhand=document.getElementById('inhand').value;
   const country=document.getElementById('country').value.trim();
+  const artwork=document.getElementById('artwork');
+  const file=artwork&&artwork.files&&artwork.files[0] ? artwork.files[0] : null;
   const btn=document.getElementById('submitBtn');
   const errEl=document.getElementById('formError');
+  const btnHtml='Send Project Brief <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>';
 
-  if(!name||!email||!details||!budget){
-    errEl.textContent='Please fill in all required fields.';
+  function fail(message, focusId){
+    errEl.textContent=message;
     errEl.style.display='block';
+    const focus=focusId&&document.getElementById(focusId);
+    if(focus) focus.focus();
+  }
+
+  if(!name||!email||!details||!budget||!projectType||!quantity||!buyerType){
+    const missing=!name?'name':!email?'email':!buyerType?'buyer-type':!projectType?'project-type':!quantity?'quantity':!budget?'budget':'details';
+    fail('Please fill in all required fields, including whether you are a brand or a distributor, project type, and quantity.', missing);
+    return;
+  }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    fail('Please enter a valid work email.', 'email');
+    return;
+  }
+  if(file && file.size > 4*1024*1024){
+    fail('That artwork file is over 4 MB. Email it to hello@brandedgiftsco.com and submit this brief without the attachment.', 'artwork');
     return;
   }
   errEl.style.display='none';
@@ -356,26 +460,46 @@ async function submitForm(){
   btn.disabled=true;
   btn.textContent='Sending…';
 
+  const subject='New Project Brief from '+name+(company?' ('+company+')':'')+' | '+projectLabel+' | Qty: '+quantity;
+  const artworkNote=file?'File attached with this brief':'No file attached. Artwork can be emailed to hello@brandedgiftsco.com';
+  const fields={
+    access_key:WEB3FORMS_KEY,
+    subject:subject,
+    from_name:'Branded Gifts Co Website',
+    replyto:email,
+    name:name,
+    company:company,
+    email:email,
+    phone:phone,
+    website:website,
+    'You are':buyerLabel,
+    'Project Type':projectLabel,
+    'Estimated Quantity':quantity,
+    'Total Budget':budget,
+    'In-Hand Date':inhand,
+    'Delivery Country':country,
+    'Artwork':artworkNote,
+    'Project Details':details
+  };
+
   try{
-    const res=await fetch(API_URL,{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({
-        access_key:WEB3FORMS_KEY,
-        subject:'New Project Brief from '+name+(company?' ('+company+')':'')+(budget?' | Budget: '+budget:''),
-        from_name:'Branded Gifts Co Website',
-        replyto:email,
-        name:name,
-        company:company,
-        email:email,
-        'Project Type':projectType,
-        'Estimated Quantity':quantity,
-        'Total Budget':budget,
-        'In-Hand Date':inhand,
-        'Delivery Country':country,
-        'Project Details':details
-      })
-    });
+    let res;
+    if(file){
+      const fd=new FormData();
+      Object.entries(fields).forEach(([key,value])=>fd.append(key, value||''));
+      fd.append('attachment', file, file.name);
+      res=await fetch(API_URL,{
+        method:'POST',
+        headers:{'Accept':'application/json'},
+        body:fd
+      });
+    }else{
+      res=await fetch(API_URL,{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify(fields)
+      });
+    }
     const data=await res.json();
     if(!data.success) throw new Error(data.message||'Server error');
     document.getElementById('startForm').style.display='none';
@@ -384,9 +508,13 @@ async function submitForm(){
     errEl.textContent='Something went wrong. Please try again or email us directly at hello@brandedgiftsco.com';
     errEl.style.display='block';
     btn.disabled=false;
-    btn.innerHTML='Send Project Brief <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>';
+    btn.innerHTML=btnHtml;
   }
 }
 </script>
+<a class="wa-float" href="https://wa.me/16262953863" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.8.7.7-3.7-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.3a.5.5 0 0 0 0-.5c0-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.4 4c.6.2 1.1.3 1.5.4a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.2-.2-.4-.3z"/></svg>
+  <span>WhatsApp</span>
+</a>
 </body>
 </html>
