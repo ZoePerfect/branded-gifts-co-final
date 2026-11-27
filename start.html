@@ -5,6 +5,10 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<script>document.documentElement.classList.add('js')</script>
+
 <meta name="description" content="Start a branded project with BRANDED GIFTS CO. Custom merchandise, OEM/ODM, kitting, and global delivery.">
 <title>Start A Branded Project — BRANDED GIFTS CO</title>
 <link rel="canonical" href="https://www.brandedgiftsco.com/start.html">
@@ -69,7 +73,7 @@ nav.scrolled{background:rgba(10,10,10,.96);border-color:var(--border);backdrop-f
 .mobile-close{position:absolute;top:24px;right:28px;background:none;border:none;color:var(--ivory);font-size:26px;cursor:pointer}
 
 /* ANIMATIONS */
-.fade-up{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.fade-up{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
 
@@ -142,6 +146,10 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .form-submit{width:100%;margin-top:6px;justify-content:center;padding:15px;font-size:12px}
 .form-note{font-size:11px;font-weight:300;color:var(--stone);text-align:center;margin-top:10px}
+.form-next{font-size:13.5px;font-weight:300;color:var(--warm-gray);line-height:1.7;background:var(--graphite);border-left:2px solid var(--gold);padding:14px 16px;margin-bottom:22px}
+.form-next strong{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.form-noscript{font-size:13.5px;font-weight:300;color:var(--ivory-dim);line-height:1.7;background:var(--surface);border:1px solid var(--border-light);padding:14px 16px;margin-bottom:18px}
+.form-noscript a{color:var(--gold)}
 .form-error{display:none;font-size:12px;font-weight:400;color:#e07070;text-align:center;margin-top:10px;padding:10px 14px;background:rgba(224,112,112,0.08);border:1px solid rgba(224,112,112,0.2);border-radius:2px}
 .form-success{display:none;text-align:center;padding:48px 20px}
 .form-success h3{font-family:var(--font-display);font-size:32px;font-weight:300;color:var(--gold);margin-bottom:12px}
@@ -170,7 +178,43 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
 }
 
 </style>
-<style>@media(max-width:1024px){.nav-right{display:none!important}}#inhand{color-scheme:dark}</style>
+<style>#inhand{color-scheme:dark}</style>
+
+<style>
+.nav-cta-short{display:none}
+.nav-cta-wrap{flex-shrink:0}
+.footer-copy-block{display:flex;flex-direction:column;gap:4px}
+.footer-entity{font-size:12px;color:var(--stone);line-height:1.5;max-width:460px}
+.footer-bottom{padding-bottom:84px}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:9000;display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;text-decoration:none;font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:12px 16px;border-radius:999px;box-shadow:0 10px 28px rgba(0,0,0,.4)}
+.wa-float:hover{background:#1db954;color:#fff}
+.wa-float svg{width:18px;height:18px;display:block;flex-shrink:0}
+.mobile-menu.open ~ .wa-float{visibility:hidden;pointer-events:none}
+.model-cta{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(200,169,106,.45);padding-bottom:4px;width:fit-content}
+.model-cta:hover{color:var(--ivory);border-color:var(--ivory)}
+html.js .fade-up{opacity:0;transform:translateY(26px)}
+html.js .fade-up.visible{opacity:1;transform:translateY(0)}
+@media(max-width:1024px){
+  .nav-links{display:none!important}
+  .nav-right{display:flex!important;align-items:center;margin-left:auto;flex-wrap:nowrap;gap:10px;min-width:0}
+  .nav-cta-wrap{display:block!important;flex-shrink:0}
+  .nav-hamburger{display:flex!important}
+}
+@media(max-width:560px){
+  .nav-cta-full{display:none}
+  .nav-cta-short{display:inline}
+  .nav-cta-wrap a{padding:8px 10px;letter-spacing:.04em}
+}
+@media(max-width:400px){
+  .nav-logo{font-size:16px}
+  .nav-cta-wrap a{font-size:9px;padding:7px 8px}
+}
+@media(max-width:640px){
+  .wa-float{width:48px;height:48px;padding:0;border-radius:50%;justify-content:center}
+  .wa-float span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+}
+</style>
+
 </head>
 <body>
 
@@ -195,7 +239,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
         <li><a href="faq.html">FAQ</a></li>
       </ul>
       <div class="nav-cta-wrap">
-        <a href="start.html">Start A Branded Project</a>
+        <a href="start.html"><span class="nav-cta-full">Start A Branded Project</span><span class="nav-cta-short">Start a Project</span></a>
       </div>
     </div>
     <button class="nav-hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">
@@ -221,6 +265,10 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
     <div class="start-form" id="startForm">
       <h2>Tell us about your project</h2>
       <p class="form-sub">All fields marked * are required.</p>
+      <div class="form-next"><strong>What happens next</strong>We reply within one business day with questions, product options, or an itemized quote. Nothing goes into production until you approve a sample. Sending this brief does not commit you to an order.</div>
+      <noscript>
+        <div class="form-noscript">This form needs JavaScript to send. Email your brief to <a href="mailto:hello@brandedgiftsco.com?subject=Project%20Brief">hello@brandedgiftsco.com</a> with your name, company, work email, project type, quantity, budget, in-hand date, delivery country, and project details.</div>
+      </noscript>
       <div class="form-row">
         <div class="form-group"><label class="form-label" for="name">Name *</label><input class="form-input" type="text" id="name" placeholder="Your name" required></div>
         <div class="form-group"><label class="form-label" for="company">Company</label><input class="form-input" type="text" id="company" placeholder="Company name"></div>
@@ -257,7 +305,6 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
         <div class="footer-badges">
           <span class="footer-badge">US Company</span>
           <span class="footer-badge">OEM · ODM</span>
-          <span class="footer-badge">SAGE / ASI</span>
           <span class="footer-badge">Global DDP</span>
         </div>
         <div class="footer-social">
@@ -290,11 +337,11 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><span class="footer-address">Wyoming, USA</span></li>
+          <li><span class="footer-address">Branded Gifts Co LLC / Registered in Wyoming, USA</span></li>
           <li><a href="mailto:hello@brandedgiftsco.com">hello@brandedgiftsco.com</a></li>
           <li><a href="tel:+16262953863">+1 (626) 295-3863</a></li>
           <li><a href="https://wa.me/16262953863">WhatsApp</a></li>
-          <li><a href="start.html">Get a Quote</a></li>
+          <li><a href="start.html">Start a Project</a></li>
         </ul>
       </div>
     </div>
@@ -302,7 +349,10 @@ footer{background:var(--charcoal);border-top:1px solid var(--border);padding:56p
   <div class="footer-bottom">
     <div class="container">
       <div class="footer-bottom-inner">
-        <span class="footer-copy">© 2026 BRANDED GIFTS CO. All rights reserved.</span>
+        <div class="footer-copy-block">
+          <span class="footer-copy">© 2026 BRANDED GIFTS CO. All rights reserved.</span>
+          <span class="footer-entity">Branded Gifts Co LLC / Registered in Wyoming, USA</span>
+        </div>
         <div class="footer-legal">
           <a href="privacy.html">Privacy Policy</a>
           <span class="footer-legal-sep">|</span>
@@ -387,6 +437,26 @@ async function submitForm(){
     btn.innerHTML='Send Project Brief <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg>';
   }
 }
+
+(function prefillProjectType(){
+  const map={
+    'welcome-kits':'Gift Set Kitting','turnkey':'Gift Set Kitting','kitting':'Gift Set Kitting','lifestyle':'Gift Set Kitting',
+    'packaging':'Custom Packaging','oem':'OEM Manufacturing','oem-odm':'OEM Manufacturing','odm':'ODM Development',
+    'merchandise':'Custom Merchandise','event':'Custom Merchandise','drinkware':'Custom Merchandise','apparel':'Custom Merchandise',
+    'tech':'Custom Merchandise','tech-kits':'Custom Merchandise','office':'Custom Merchandise','travel':'Custom Merchandise',
+    'travel-kits':'Custom Merchandise','eco':'Custom Merchandise','trade':'Custom Merchandise','unsure':'Not Sure Yet'
+  };
+  const type=new URLSearchParams(window.location.search).get('type');
+  const label=map[type];
+  const sel=document.getElementById('project-type');
+  if(!label||!sel) return;
+  const opt=[...sel.options].find(o=>o.value===label||o.text===label);
+  if(opt) sel.value=opt.value;
+})();
 </script>
+<a class="wa-float" href="https://wa.me/16262953863" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.8.7.7-3.7-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.3a.5.5 0 0 0 0-.5c0-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.4 4c.6.2 1.1.3 1.5.4a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.2-.2-.4-.3z"/></svg>
+  <span>WhatsApp</span>
+</a>
 </body>
 </html>
